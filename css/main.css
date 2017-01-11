@@ -67,7 +67,8 @@ body {
 
 .box h2, .box p {
   opacity: 0;
-  -webkit-animation: fadein 5s ease 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s ease 2s forwards;
+  -webkit-animation: fadein 5s ease 2s forwards;
   animation: fadein 5s ease 2s forwards;
 }
 
