@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+html, body {
+    color: #222;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 10px #000;
+  color: white;
+  text-align: center;
+}
+
+.background {
+  background-image: url('https://unsplash.it/1280/720/?random&gravity=west');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  filter: brightness(0.5);
+}
+
+.box {
+  z-index: 1;
+}
+
+.box h1 {
+  font-size: 2em;
+  margin: 0px;
+
+}
+
+.box h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 8vw;
+  color: PaleGreen;
+  margin-bottom: 0px;
+  word-break:break-all;
+  text-transform: capitalize;
+}
+@media(max-width: 900px) {
+  .box h2 {
+    margin: 10px 0;
+    font-size: 25vw;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .box h2 span {
+    font-size: 10vw;
+  }
+}
+
+.box p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.box h2, .box p {
+  opacity: 0;
+  -webkit-animation: fadein 5s ease 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 5s ease 2s forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
