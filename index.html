@@ -31,7 +31,9 @@
         <!-- Add your site or application content here -->
         <div class="box">
           <h1>Er vi on time?</h1>
-          <h2>Ja<span class="name"></span></h2>
+          <!--h2>Ja<span class="name"></span></h2-->
+          <h2 class="almost">Næsten<span class="name"></span></h2>
+          <!--h2 class="no">Nej<span class="name"></span></h2-->
           <p>
             (det skal nok gå)
           </p>
@@ -43,7 +45,7 @@
             var param = window.location.search.replace("?", "").split("&")[0];
             console.log("plz: ", param);
             if(param){
-              document.querySelector(".name").innerHTML = " " + param;
+              document.querySelector(".name").innerHTML = ", " + param;
             }
           }
           getParam();

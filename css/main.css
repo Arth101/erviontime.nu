@@ -49,6 +49,15 @@ body {
   word-break:break-all;
   text-transform: capitalize;
 }
+
+.box h2.almost {
+  color: DarkOrange;
+}
+
+.box h2.no {
+  color: Red;
+}
+
 @media(max-width: 900px) {
   .box h2 {
     margin: 10px 0;
